@@ -18,5 +18,5 @@ The **OCR Region Selector** is a tool that enables users to interactively select
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/ocr-region-selector.git
-   cd ocr-region-selector
+   git clone https://github.com/asmuiahmad/OCR_RegionSelector.git
+   cd OCR_RegionSelector
