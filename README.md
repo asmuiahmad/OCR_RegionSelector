@@ -1,9 +1,10 @@
-![Alt text](ocr_example.png)
 
 # OCR Region Selector
 
 ## Description
-This Python program allows users to interactively annotate an image using the OpenCV library. It enables you to click on points within an image, create custom annotations by inputting a type and a name for the selected area, and draw circles at the clicked points. The program saves these annotations and allows you to visualize your selections in real-time.
+This Python program allows users to interactively annotate an image using the OpenCV library. 
+It enables you to click on points within an image, create custom annotations by inputting a type and a name for the selected area, and draw circles at the clicked points. 
+The program saves these annotations and allows you to visualize your selections in real-time.
 
 ## Features
 - **Interactive Image Annotation**: Click anywhere on the image to place a point and create an annotation with custom data (type and name).
@@ -19,23 +20,29 @@ Before running the script, make sure you have the following:
 
 ## Installation
 1. Clone the repository or download the script.
-You can download the image_interaction.py script or clone it from a repository (if applicable).
+You can download the ```image_interaction.py``` script or clone it from a repository (if applicable).
 
 2. Install dependencies.
 To install OpenCV, run the following command:
-```pip install -r requirements.txt```
+```python
+pip install -r requirements.txt
+```
 
 4. Update the image path.
 In the script, make sure to update the path variable to point to the location of the image you want to annotate. For example:
-```path = 'path/to/your/image/images-any-extensions.png/jpg/jpeg'```
+```markdown
+path = 'path/to/your/image/images-any-extensions.png/jpg/jpeg'
+```
 Make sure that the path is correct and points to an existing image on your local system.
 
 ## Usage
 1. Run the script.
 Once you have installed OpenCV and set the correct image path, you can run the script from the command line as follows:
-```python OCR_RegionSelector.py```
+```python
+OCR_RegionSelector.py
+```
 
-2. Interact with the image.
+3. Interact with the image.
 The image will open in a new window, and you can interact with it using your mouse:
 - **Click on the image:** Each click places a point on the image. The program will ask you to enter a "Type" and "Name" for the selected region.
 - **Exit the program:** Press the 's' key to stop the interaction and print the list of annotated points to the console.
@@ -45,16 +52,16 @@ You can click multiple locations on the image, and the program will store and di
 
 ## Example Output:
 After clicking and annotating several points, the program will display something like this in the terminal when you exit:
-
-```[[((x1, y1), (x2, y2), 'Type1', 'Name1')],```
-
-```[(x3, y3), (x4, y4), 'Type2', 'Name2')]]```
+```python
+[[((x1, y1), (x2, y2), 'Type1', 'Name1')],
+[(x3, y3), (x4, y4), 'Type2', 'Name2')]]
+```
 
 This output represents a list of annotations, each containing:
 
 - Two points: Start point and end point (coordinates).
 - A "Type" and "Name" for each annotation.
-- also Type have two type : 1. text, 2. sign
+- also Type have two type : **1. text, 2. sign**
 
 ## Troubleshooting
 - **Error: Could not read the image file:** If you receive an error stating that the image couldn't be read, make sure the path variable points to an existing file. Verify that the file path is correct, and the image is accessible.
